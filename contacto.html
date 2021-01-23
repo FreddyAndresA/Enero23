@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contacto.css">
+    <title>23 de enero</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container row">
+            <a href="index.html" class="logo__enlace">
+                <img class="logo" src="img/logo.png" alt="">
+            </a>
+            <nav class="nav row">
+                <li class="nav__item">
+                    <a href="index.html"" class="nav__link">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contacto.html"" class="nav__link">Contacto</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#"" class="nav__link">Lenguajes de Programación</a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">PHP</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Java</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Javascript</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">C++</a>
+                        </li>
+                    </ul>
+                </li>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <div>
+        <form>
+            <div class="section-flex">
+                <div class="elemnt-form">
+                    <div class="label">
+                        <label for="type"> Tipo de mensaje </label>
+                    </div> 
+                    <select id="type" name="type" required>
+                        <option value=""> Seleccione una opción</option>
+                        <option value="cotizacion"> Cotización</option> 
+                        <option value="saludo"> Saludo</option> 
+                        <option value="queja"> Queja</option>     
+                    </select>
+                </div>
+                
+                <div class="elemnt-form">
+                    <div class="label">
+                        <label for="name"> Nombres </label>
+                    </div> 
+                    <input type="text" id="name" name="name" placeholder="Ingrese sus nombre" required>
+                </div>
+
+                <div class="elemnt-form">
+                    <div class="label">
+                        <label for="email"> Email </label>
+                    </div> 
+                    <input type="text" id="email" name="email" placeholder="example@correo.com" required>
+                </div>
+
+                <div class="elemnt-form">
+                    <div class="label">
+                        <label for="celular"> Celular </label>
+                    </div> 
+                    <input type="text" id="celular" name="celular" placeholder="Ingrese su celular" required>
+                </div>
+
+                <div class="elemnt-form">
+                    <div class="label">
+                        <label for="comment"> Comentario </label>
+                    </div> 
+
+                    <textarea  id="comment" name="comment" placeholder="Ingrese su comentario" required>
+                    </textarea>
+                </div>
+
+                <div class="elemnt-form">
+                    <div>
+                        <label> ¿Que estudias? </label>
+                    </div> 
+                    <input type="checkbox" id="chk1" name="chk1" value="html"> HML
+                   
+                    <input type="checkbox" id="chk2" name="chk2" value="css"> CSS
+                    
+                    <input type="checkbox" id="chk3" name="chk3" value="php"> PHP
+                </div>
+                
+                <div class="elemnt-form">
+                    <div>
+                        <label> ¿Que estudias? </label>
+                    </div> 
+                    <input type="radio" name="radi" id="Radios1" value="html"> HML
+                    <input type="radio" name="radi" id="Radios2" value="css"> CSS
+                    <input type="radio" name="radi" id="Radios3" value="php"> PHP
+                </div>
+
+                <div class="btn-div">
+                    <button type="submit"> Enviar Datos </button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p class="footer__text">Desarrollado por Freddy Andres Angel Nova</p>
+    </footer>
+
+
+</body>
+</html>
